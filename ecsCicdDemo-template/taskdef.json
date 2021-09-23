@@ -1,0 +1,36 @@
+{
+  "executionRoleArn": "<executionRoleArn>",
+  "containerDefinitions": [
+    {
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "protocol": "tcp",
+          "containerPort": 80
+        }
+      ],
+      "cpu": 256,
+      "environment": [
+        {
+          "name": "APPLE",
+          "value": "yes"
+        }
+      ],
+      "memoryReservation": 256,
+      "image": "<IMAGE>",
+      "name": "nginx"
+    }
+  ],
+  "memory": "512",
+  "taskRoleArn": "<taskRoleArn>",
+  "compatibilities": [
+    "EC2",
+    "FARGATE"
+  ],
+  "family": "<family>",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc",
+  "cpu": "256"
+}

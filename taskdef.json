@@ -1,0 +1,36 @@
+{
+  "executionRoleArn": "arn:aws:iam::295273672130:role/my-stack-dev-devtaskdefExecutionRoleD3432673-1X0ARBJA2FSBU",
+  "containerDefinitions": [
+    {
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "protocol": "tcp",
+          "containerPort": 80
+        }
+      ],
+      "cpu": 256,
+      "environment": [
+        {
+          "name": "APPLE",
+          "value": "yes"
+        }
+      ],
+      "memoryReservation": 256,
+      "image": "295273672130.dkr.ecr.ap-northeast-1.amazonaws.com/nginx:latest",
+      "name": "nginx"
+    }
+  ],
+  "memory": "512",
+  "taskRoleArn": "arn:aws:iam::295273672130:role/my-stack-dev-devtaskdefTaskRole38F389EE-A3CHWXXM84AG",
+  "compatibilities": [
+    "EC2",
+    "FARGATE"
+  ],
+  "family": "mystackdevdevtaskdefF2868258",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc",
+  "cpu": "256"
+}
