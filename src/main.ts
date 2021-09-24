@@ -17,7 +17,7 @@ import * as cdk from '@aws-cdk/core';
 export class DevStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props: cdk.StackProps = {}) {
     super(scope, id, props);
-    const vpc = ec2.Vpc.fromLookup(this, 'Vpc', { isDefault: true });
+    const vpc = new ec2.Vpc(this, 'vpc', { natGateways: 1 });
 
     // Create a new ECR Repository
     const repo = ecr.Repository.fromRepositoryName(this, 'NginxRepo', 'nginx');
@@ -99,13 +99,13 @@ export class DevStack extends cdk.Stack {
       value: devfargateService.service.taskDefinition.family,
     });
 
-    this.createPipeline(codecommitRepo, 'dev', devfargateService.service, artifactBucket, 'nginx', 'nginx', devfargateService);
+    this.createPipeline(codecommitRepo, 'dev', devfargateService.service, artifactBucket, 'nginx', 'nginx', devfargateService, vpc);
 
 
   }
   private createPipeline (
     codecommitRepo: codecommit.IRepository, env: string, svc: ecs.IBaseService, artifactBucket: s3.IBucket,
-    containerName: string, ecrRepoName: string, fargateService: ecs_patterns.ApplicationLoadBalancedFargateService) {
+    containerName: string, ecrRepoName: string, fargateService: ecs_patterns.ApplicationLoadBalancedFargateService, vpc: ec2.Vpc) {
     // CODEBUILD - project
     const codecommitSource = codebuild.Source.codeCommit({
       repository: codecommitRepo,
@@ -215,7 +215,7 @@ export class DevStack extends cdk.Stack {
       targetGroupName: 'greenTG',
       port: 80,
       targetType: elb.TargetType.IP,
-      vpc: ec2.Vpc.fromLookup(this, 'vpc', { isDefault: true }),
+      vpc,
     });
 
     const greenListner = new elb.ApplicationListener(this, 'greenListener', {

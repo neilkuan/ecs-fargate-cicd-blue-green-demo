@@ -14,6 +14,7 @@ const project = new AwsCdkTypeScriptApp({
     '@aws-cdk/aws-s3',
     '@aws-cdk/aws-iam',
     '@aws-cdk/aws-lambda',
+    '@aws-cdk/assertions',
     '@aws-cdk/custom-resources',
     '@aws-cdk/aws-ecs-patterns',
     '@aws-cdk/aws-ecr-assets',
