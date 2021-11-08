@@ -1,4 +1,4 @@
-import * as path from 'path';
+// import * as path from 'path';
 import * as codebuild from '@aws-cdk/aws-codebuild';
 import * as codecommit from '@aws-cdk/aws-codecommit';
 import * as codedeploy from '@aws-cdk/aws-codedeploy';
@@ -6,7 +6,7 @@ import * as codepipeline from '@aws-cdk/aws-codepipeline';
 import * as codepipeline_actions from '@aws-cdk/aws-codepipeline-actions';
 import * as ec2 from '@aws-cdk/aws-ec2';
 import * as ecr from '@aws-cdk/aws-ecr';
-import { DockerImageAsset } from '@aws-cdk/aws-ecr-assets';
+// import { DockerImageAsset } from '@aws-cdk/aws-ecr-assets';
 import * as ecs from '@aws-cdk/aws-ecs';
 import * as ecs_patterns from '@aws-cdk/aws-ecs-patterns';
 import * as elb from '@aws-cdk/aws-elasticloadbalancingv2';
@@ -22,10 +22,10 @@ export class DevStack extends cdk.Stack {
     // Create a new ECR Repository
     const repo = ecr.Repository.fromRepositoryName(this, 'NginxRepo', 'nginx');
 
-    new DockerImageAsset(this, 'CDKDockerImage', {
-      directory: path.join(__dirname, '../docker'),
-      repositoryName: 'nginx',
-    });
+    // new DockerImageAsset(this, 'CDKDockerImage', {
+    //   directory: path.join(__dirname, '../docker'),
+    //   repositoryName: 'nginx',
+    // });
 
     // cdk.Stack.of(this).synthesizer.addDockerImageAsset({ sourceHash: 'Dockerfile', repositoryName: 'nginx' });
 
@@ -227,7 +227,7 @@ export class DevStack extends cdk.Stack {
     });
     greenTG.registerListener(greenListner);
 
-    greenTG.node.addDependency(greenListner);
+    // greenTG.node.addDependency(greenListner);
     new cdk.CustomResource(this, 'ecsdeploygroup', {
       resourceType: 'Custom::ECSDeployGroup',
       serviceToken: cr.functionArn,
