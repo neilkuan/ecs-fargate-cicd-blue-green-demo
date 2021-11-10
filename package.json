@@ -39,7 +39,7 @@
     "eslint-plugin-import": "^2.25.2",
     "jest": "^27.3.1",
     "jest-junit": "^12",
-    "json-schema": "^0.3.0",
+    "json-schema": "^0.4.0",
     "npm-check-updates": "^11",
     "projen": "^0.28.28",
     "ts-jest": "^27.0.7",
