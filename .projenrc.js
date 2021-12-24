@@ -28,7 +28,7 @@ const project = new AwsCdkTypeScriptApp({
   gitignore: [
     'cdk.context.json', 'cdk.out', 'images',
   ],
-  depsUpgrade: {
+  depsUpgradeOptions: {
     workflowOptions: {
       labels: ['auto-approve'],
       secret: 'AUTOMATION_GITHUB_TOKEN',
