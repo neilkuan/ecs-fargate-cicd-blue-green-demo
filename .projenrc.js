@@ -1,5 +1,5 @@
-const { AwsCdkTypeScriptApp } = require('projen');
-const project = new AwsCdkTypeScriptApp({
+const { awscdk } = require('projen');
+const project = new awscdk.AwsCdkTypeScriptApp({
   cdkVersion: '1.124.0',
   defaultReleaseBranch: 'main',
   name: 'ecs-fargate-cicd-blue-green-demo',
@@ -31,7 +31,6 @@ const project = new AwsCdkTypeScriptApp({
   depsUpgradeOptions: {
     workflowOptions: {
       labels: ['auto-approve'],
-      secret: 'AUTOMATION_GITHUB_TOKEN',
     },
   },
   autoApproveOptions: {
