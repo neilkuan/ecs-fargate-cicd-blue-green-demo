@@ -2288,9 +2288,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^3.2.27, constructs@^3.3.69:
-  version "3.4.87"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.87.tgz#3cdeacd6da925aadc3618dc44859a351645ee397"
-  integrity sha512-9q3lNeo37SzW+O37ArM6fSo2muVEaTqgYoFM5QNf7aslGwZ2qaJm4fZWzfMqsqrHDrWlXXhLcy6D0b2vIZ4u7g==
+  version "3.4.88"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.88.tgz#5c5ee0946bf0584efb781195daf6e700729fdde8"
+  integrity sha512-3BrrsSLxTtDZlGubvSRICK85mP11XJtWq+0a59/Rhi6ZPtj5e/J2fpWcz3WcdaZPTzNzrkEHO6VsBxl9LGZFhQ==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -5620,9 +5620,9 @@ supports-color@^8.0.0:
     has-flag "^4.0.0"
 
 supports-hyperlinks@^2.0.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/supports-hyperlinks/-/supports-hyperlinks-2.2.0.tgz#4f77b42488765891774b70c79babd87f9bd594bb"
-  integrity sha512-6sXEzV5+I5j8Bmq9/vUphGRM/RJNT9SCURJLjwfOg51heRtguGWDzcaBlgAzKhQa0EVNpPEKzQuBwZ8S8WaCeQ==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/supports-hyperlinks/-/supports-hyperlinks-2.3.0.tgz#3943544347c1ff90b15effb03fc14ae45ec10624"
+  integrity sha512-RpsAZlpWcDwOPQA22aCH4J0t7L8JmAvsCxfOSEwm7cQs3LshN36QaTkwd70DnBOXDWGssw2eUoc8CaRWT0XunA==
   dependencies:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
