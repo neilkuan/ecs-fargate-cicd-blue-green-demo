@@ -1,21 +1,22 @@
 // import * as path from 'path';
-import * as codebuild from '@aws-cdk/aws-codebuild';
-import * as codecommit from '@aws-cdk/aws-codecommit';
-import * as codedeploy from '@aws-cdk/aws-codedeploy';
-import * as codepipeline from '@aws-cdk/aws-codepipeline';
-import * as codepipeline_actions from '@aws-cdk/aws-codepipeline-actions';
-import * as ec2 from '@aws-cdk/aws-ec2';
-import * as ecr from '@aws-cdk/aws-ecr';
+import * as cdk from 'aws-cdk-lib';
+import * as codebuild from 'aws-cdk-lib/aws-codebuild';
+import * as codecommit from 'aws-cdk-lib/aws-codecommit';
+import * as codedeploy from 'aws-cdk-lib/aws-codedeploy';
+import * as codepipeline from 'aws-cdk-lib/aws-codepipeline';
+import * as codepipeline_actions from 'aws-cdk-lib/aws-codepipeline-actions';
+import * as ec2 from 'aws-cdk-lib/aws-ec2';
+import * as ecr from 'aws-cdk-lib/aws-ecr';
 // import { DockerImageAsset } from '@aws-cdk/aws-ecr-assets';
-import * as ecs from '@aws-cdk/aws-ecs';
-import * as ecs_patterns from '@aws-cdk/aws-ecs-patterns';
-import * as elb from '@aws-cdk/aws-elasticloadbalancingv2';
-import * as iam from '@aws-cdk/aws-iam';
-import * as lambda from '@aws-cdk/aws-lambda';
-import * as s3 from '@aws-cdk/aws-s3';
-import * as cdk from '@aws-cdk/core';
+import * as ecs from 'aws-cdk-lib/aws-ecs';
+import * as ecs_patterns from 'aws-cdk-lib/aws-ecs-patterns';
+import * as elb from 'aws-cdk-lib/aws-elasticloadbalancingv2';
+import * as iam from 'aws-cdk-lib/aws-iam';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as constructs from 'constructs';
 export class DevStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props: cdk.StackProps = {}) {
+  constructor(scope: constructs.Construct, id: string, props: cdk.StackProps = {}) {
     super(scope, id, props);
     const vpc = new ec2.Vpc(this, 'vpc', { natGateways: 1 });
 
