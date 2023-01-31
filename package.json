@@ -46,9 +46,8 @@
     "eslint-plugin-import": "^2.27.5",
     "jest": "^27.5.1",
     "jest-junit": "^13",
-    "json-schema": "^0.4.0",
     "npm-check-updates": "^16",
-    "projen": "^0.67.21",
+    "projen": "^0.67.24",
     "ts-jest": "^27.1.5",
     "ts-node": "^9",
     "typescript": "4.6"
