@@ -3531,9 +3531,9 @@ node-int64@^0.4.0:
   integrity sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==
 
 node-releases@^2.0.36:
-  version "2.0.47"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.47.tgz#521bb2786da8eb140b748841c0b3b3a75334ffc4"
-  integrity sha512-Uzmd6LXpouKo8EUK68IjH4+E01w/hXyV3R3g/geCJo+rXLNfh1xucB+LOzYEOQPSiUK3h/xZf0cQGcSsmyL2Og==
+  version "2.0.48"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.48.tgz#4da73d040ada751fc9959d993f27de48792e3b7d"
+  integrity sha512-1uz8041X6LoI6ZSdZacM9lVY28vuzDlSKitnpbSNK0RfKoIJkX29NBPVEFXhnuSuEOA9Ww0xnPJ+ILWbGAv8DA==
 
 normalize-path@^3.0.0:
   version "3.0.0"
@@ -3778,10 +3778,10 @@ pretty-format@^27.0.0, pretty-format@^27.5.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-projen@^0.99.76:
-  version "0.99.76"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.99.76.tgz#5394af2e07a28c7cb0430c8da597b058c1990c09"
-  integrity sha512-WCExIFiuiqALWQd+1ZtP9yM/gV4C99kgqk33vtQmmWzETa/S3PjgGczMwLEF3NiN9fuSPjsMAHKaj9FkTuog5Q==
+projen@^0.99.80:
+  version "0.99.80"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.99.80.tgz#71855afa98d271d5cb734405bf6434270b6f168e"
+  integrity sha512-rF4J7QZXDxeaBJtcRGHbQbykoZ1NGTlpM9mffSkt611HwZ9y4SpYydJRMMfCGAAeRV40UP8JK/m/yUhn7AtZJQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
