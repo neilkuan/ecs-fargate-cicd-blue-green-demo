@@ -23,4 +23,13 @@ const project = new awscdk.AwsCdkTypeScriptApp({
     '@types/prettier@2.6.0',
   ],
 });
+project.eslint.allowDefaultProjectFiles('.projenrc.js');
+project.eslint.addOverride({
+  files: ['.projenrc.js'],
+  parserOptions: { project: null },
+  rules: {
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/return-await': 'off',
+  },
+});
 project.synth();
