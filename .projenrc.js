@@ -22,10 +22,8 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   devDeps: [
     '@types/prettier@2.6.0',
   ],
-  eslintOptions: {
-    allowDefaultProject: ['.projenrc.js'],
-  },
 });
+project.eslint.allowDefaultProjectFiles('.projenrc.js');
 project.eslint.addOverride({
   files: ['.projenrc.js'],
   parserOptions: { project: null },
