@@ -22,9 +22,9 @@
     semver "^7.8.5"
 
 "@aws-cdk/cloud-assembly-schema@^54.11.0":
-  version "54.23.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-54.23.0.tgz#4115e82b9aa96bd8bb60463aebea426300aadab0"
-  integrity sha512-6ymdxl2MT34iES1Qot7cWAOzJCoRMrNr/E82/eYAx1inEJXG6iqJOsoa+nTa5Q+Mk+b7Z9xLP3pc2LgNnkFJJw==
+  version "54.24.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-54.24.0.tgz#ad24c3de22e695a1579ecc4c2f9d46e8c8ed86ec"
+  integrity sha512-9sH1pBpWuqZR/9rYAveNi62B/jDrc9BNOL83alD/wtIUSbRkg1aj6JX2r1cSugQwLBjCizQscQZgAb5wWnTTMg==
   dependencies:
     jsonschema "^1.5.0"
     semver "^7.8.5"
@@ -1268,9 +1268,9 @@ aws-cdk-lib@^2.46.0:
     yaml "1.10.3"
 
 aws-cdk@^2:
-  version "2.1141.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.1141.0.tgz#e3c26212437cebbf0ad9c142d32007930837c1aa"
-  integrity sha512-RIKueAoFNYUot/VmlUzPUbecxNCtLzJFqpy/O+vTpjrvDn4k2Uiu9Y/QlVlQzaSJw0qqNNY6ldusJVdkX8aBNA==
+  version "2.1142.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.1142.0.tgz#d69b9dd3a30118ef903f3c471f5afe401be88036"
+  integrity sha512-gNOeii+avTJmOwfR8tVgraZ5A2EBC/529EXg7e+yBp8Zl608dAv5CtFRoJt8QoKiruiCwYr4HF6ClNAse/NkSg==
 
 babel-jest@^27.5.1:
   version "27.5.1"
@@ -3761,10 +3761,10 @@ pretty-format@^27.0.0, pretty-format@^27.5.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-projen@^0.103.23:
-  version "0.103.23"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.103.23.tgz#119116c0fd2be09db85f5ffc0a215cc69e35d9c2"
-  integrity sha512-VYNjslMGg9GBQ7qotCW8rntHNZ4a61EDZfvBJXlfWRcpB5Kd8V3cQB4WriDJYQV1euR6MsGQDWERD1PF4wex3A==
+projen@^0.103.24:
+  version "0.103.24"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.103.24.tgz#43e35a2dbc3af33f989a55d24275b87df929d762"
+  integrity sha512-8CIxbl9G9fOviFrZvZSG8RLmaUodjmDy/xokBFqLj22vsQ4jQ0REQH1EOVsS7UwtrnEKHUPiywnItL3Oxijbgw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -4561,9 +4561,9 @@ which-collection@^1.0.2:
     is-weakset "^2.0.3"
 
 which-typed-array@^1.1.16, which-typed-array@^1.1.19:
-  version "1.1.22"
-  resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.22.tgz#8f3cc78aefb40b437346dd40a1dbfa5d1da43fe9"
-  integrity sha512-fvO4ExWMFsqyhG3AiPAObMuY1lxaqgYcxbc49CNdWDDECOJNgQyvsOWVwbZc+qf3rzRtxojBK+CMEv0Ld5CYpw==
+  version "1.1.23"
+  resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.23.tgz#9c586ad46795d0a31e14cef261d5d24bbfb4e2c7"
+  integrity sha512-JMh8aK+1B/0bk/YNupICmH5MgCq6yNLKYQUfsZtSDLLCCmxUkHjUY+oOlIa90lO7lHN1woAfpenLdlKpXy9o+A==
   dependencies:
     available-typed-arrays "^1.0.7"
     call-bind "^1.0.9"
